@@ -1,0 +1,83 @@
+.choice-container {
+  display: flex;
+  margin-bottom: 7px;
+  font-size: 1.8rem;
+  width: 100%;
+  border: rgb(12, 2, 125);
+  background-color: rgb(17, 15, 11);
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem rgba(8, 39, 243, 0.952);
+  transform: translate(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: rgb(123, 121, 243);
+  color: rgb(15, 12, 12);
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: rgb(5, 166, 5);
+}
+
+.incorrect {
+  background-color: rgb(237, 40, 5);
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid rgb(124, 129, 223);
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: rgb(119, 119, 237);
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#loader {
+  border: 1.6rem solid rgb(145, 205, 244);
+  border-radius: 50%;
+  border-top: 1.6rem solid #04335c;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
